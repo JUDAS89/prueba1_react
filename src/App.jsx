@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 import MiApi from './components/miapi'
 import Buscador from './components/buscador'
@@ -8,9 +8,8 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='app'>
         <MiApi />
-        <Buscador />
       </div>
     </>
   )

@@ -1,0 +1,25 @@
+.app{
+    background-color: white;
+    padding: 20px;
+}
+
+table{
+    table-layout: initial;
+    color: black;
+    border-style: solid;
+    border-color: aqua;
+    margin: 20px;
+    font-size:medium;
+}
+
+
+h1{
+    background-color: aqua;
+    color: black;
+}
+
+input{
+    background-color:chartreuse;
+    width: 670px;
+    height: 20px;
+}
