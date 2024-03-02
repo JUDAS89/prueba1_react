@@ -25,7 +25,7 @@ function MiApi () {
 
     const handleSearch = (e) => {
         setSearch(e.target.value)
-    }
+      }
 
     const normalizeString = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, '') //para que el filtro no considere los acentos 
 
@@ -43,27 +43,29 @@ function MiApi () {
         )
         .map(([codigo, indicador]) => ({ ...indicador, codigo }))
     }
+
+    //ordenar resultados de la API por nombre y alfabeticamente
+    results.sort((a,b) => a.nombre.localeCompare(b.nombre))
   
     return (
         <>
-          <h1>INDICADORES ECONÓMICOS</h1>
-          <div>
+        <div>
             <input
-              type="text"
-              placeholder="Buscar por nombre"
-              className="form-control"
-              value={search}
-              onChange={handleSearch}
+            type="text"
+            placeholder="Buscar por nombre"
+            className="form-control"
+            value={search}
+            onChange={handleSearch}
             />
-          </div>
+      </div>
           <table className="table">
             <thead>
               <tr>
-                <th>Código</th>
-                <th>Nombre</th>
-                <th>Medida</th>
-                <th>Fecha</th>
-                <th>Valor</th>
+                <th className='codigo'>Código</th>
+                <th className='nombre'>Nombre</th>
+                <th className='medida'>Medida</th>
+                <th className='fecha'>Fecha</th>
+                <th className='valor'>Valor</th>
               </tr>
             </thead>
             <tbody>

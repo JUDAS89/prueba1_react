@@ -4,14 +4,24 @@
 }
 
 table{
-    table-layout: initial;
     color: black;
     border-style: solid;
     border-color: aqua;
     margin: 20px;
-    font-size:medium;
+    font-size:small;
 }
 
+th {
+    background-color: aqua;
+}
+
+.codigo, .medida, .fecha, .valor{
+    width: 100px;
+}
+
+.nombre{
+    width: 300px;
+}
 
 h1{
     background-color: aqua;
@@ -20,6 +30,11 @@ h1{
 
 input{
     background-color:chartreuse;
-    width: 670px;
-    height: 20px;
+    border-color: black;
+    width: 725px;
+    height: 30px;
+}
+
+footer{
+    color: red;
 }

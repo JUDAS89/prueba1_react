@@ -2,8 +2,8 @@ import React from "react"
 
 const Buscador = ({ onBuscar }) => {
     const handleChange = (e) => {
-      onBuscar(e.target.value);
-    };
+      onBuscar(e.target.value)
+    }
   
     return (
       <div>
@@ -14,7 +14,7 @@ const Buscador = ({ onBuscar }) => {
           onChange={handleChange}
         />
       </div>
-    );
-  };
+    )
+  }
   
-  export default Buscador;
+  export default Buscador

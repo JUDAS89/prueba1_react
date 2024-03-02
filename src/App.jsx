@@ -9,8 +9,10 @@ function App() {
   return (
     <>
       <div className='app'>
+        <h1>INDICADORES ECONÓMICOS</h1>
         <MiApi />
       </div>
+      <footer>Principales indicadores economicos</footer>
     </>
   )
 }
