@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './style.css'
+import Buscador from './buscador'
 
 function MiApi () {
     // 3 - info guardara los valores traidos dessde la API
@@ -24,6 +25,7 @@ function MiApi () {
     }
 
     const handleSearch = (e) => {
+        console.log("Valor de búsqueda:", e.target.value)
         setSearch(e.target.value)
       }
 

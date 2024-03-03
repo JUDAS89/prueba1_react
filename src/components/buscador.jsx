@@ -4,7 +4,6 @@ const Buscador = ({ onBuscar }) => {
     const handleChange = (e) => {
       onBuscar(e.target.value)
     }
-  
     return (
       <div>
         <input
